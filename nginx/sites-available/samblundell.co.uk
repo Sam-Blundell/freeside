@@ -10,7 +10,7 @@ server {
 		proxy_cache_bypass $http_upgrade;
 	}
 
-	location /snake/ {
+	location /snake {
         alias /home/jack/personal-website/public/snake/;
         try_files $uri $uri/ =404;
     }
